@@ -1,0 +1,27 @@
+# Local runtime inputs and outputs never belong in the evidence repository.
+data/
+checkpoint/
+checkpoints/
+models/
+images/
+logs/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+*.safetensors
+*.gguf
+*.bin
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.tar
+*.zip
+*.log
+fresh-*.jsonl
+fresh-*.jsonl.metadata.json
+new-rescore.json
