@@ -1,0 +1,44 @@
+[
+  {
+    "type": "file",
+    "oid": "55cab133643a2a73e083373d2106533678d0edd5",
+    "size": 2419,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "154df8298fab5ecf322016157858e08cd1bccbe1",
+    "size": 28,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "24bafe924b06f3191518f82c122367e85d8f2a33",
+    "size": 76936,
+    "path": "screenspot_desktop_v2.json"
+  },
+  {
+    "type": "file",
+    "oid": "f615a8d8f8d0a69835a73736ecbb42c6560e1cb5",
+    "size": 119098,
+    "path": "screenspot_mobile_v2.json"
+  },
+  {
+    "type": "file",
+    "oid": "f1a793106c6c888347582682ee0eafa755620959",
+    "size": 103636,
+    "path": "screenspot_web_v2.json"
+  },
+  {
+    "type": "file",
+    "oid": "336ef2ab1630cef9b00675ad0ab3a9d33e4f78fe",
+    "size": 1331012233,
+    "lfs": {
+      "oid": "750555b8b06e3898634c610cd904600feb7ec7ca530e625a00c1416a73d829ee",
+      "size": 1331012233,
+      "pointerSize": 135
+    },
+    "xetHash": "b1fb85cf268c82e8f120f7a4bea73bd788e4a01410cc092ef9e4e20b3dcbd99b",
+    "path": "screenspotv2_image.zip"
+  }
+]

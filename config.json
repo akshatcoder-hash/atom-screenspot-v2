@@ -1,0 +1,29 @@
+{
+  "dataset": {
+    "repo": "OS-Copilot/ScreenSpot-v2",
+    "revision": "5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c",
+    "split": "all",
+    "n": 1272
+  },
+  "checkpoint_weight_sha256": "c4632a244c9e8354417c2f44900d28886022971843b5ab5ce37e92227aef01ca",
+  "prompt_template": "What to do to execute the command? {instruction}",
+  "prompt_strip_and_lowercase": true,
+  "temperature": 0.0,
+  "max_tokens": 32,
+  "coord_scale": 1000.0,
+  "strategies": [
+    "oneshot",
+    "reground1024"
+  ],
+  "reground_crop_size_pixels": 1024,
+  "processor_resize": [
+    768,
+    768
+  ],
+  "refinement_selection": "last valid point; no ground-truth or confidence selection",
+  "exception_retry_count": 1,
+  "retry_delay_seconds": 1.0,
+  "null_prediction_policy": "miss; retain denominator; no automatic retry for parse-only null",
+  "scoring": "inclusive point in pixel xywh box",
+  "serial_single_worker": true
+}

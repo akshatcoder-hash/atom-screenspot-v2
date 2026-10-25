@@ -1,0 +1,37 @@
+{
+  "os_copilot_revision": "5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c",
+  "lmms_revision": "e585981517e2a2ef3ec4ab6a0668008baca24137",
+  "rows_os": 1272,
+  "rows_lmms": 1272,
+  "keys_only_os": 0,
+  "keys_only_lmms": 0,
+  "differences": [],
+  "duplicate_keys_os": 1,
+  "duplicate_keys_lmms": 1,
+  "lmms_sources": [
+    {
+      "file": "data/train-00000-of-00003.parquet",
+      "revision": "e585981517e2a2ef3ec4ab6a0668008baca24137",
+      "lfs_sha256": "29b89a44714c7b7c69ffdce9bd88647da482b590758a3ce84739a73be0f8edc0",
+      "rows": 424,
+      "bytes_transferred": 91361,
+      "authentication": "HTTPS byte ranges from immutable revision; whole Parquet LFS hash not downloaded/verified"
+    },
+    {
+      "file": "data/train-00001-of-00003.parquet",
+      "revision": "e585981517e2a2ef3ec4ab6a0668008baca24137",
+      "lfs_sha256": "2cfad6055a833c08e6b648f7a00ba4a8fa898350f11bf03019b3a5cd1a902daf",
+      "rows": 424,
+      "bytes_transferred": 90696,
+      "authentication": "HTTPS byte ranges from immutable revision; whole Parquet LFS hash not downloaded/verified"
+    },
+    {
+      "file": "data/train-00002-of-00003.parquet",
+      "revision": "e585981517e2a2ef3ec4ab6a0668008baca24137",
+      "lfs_sha256": "530b3873f340561193c407b5cdd5f138d46792d5fd23c39324eadf7745fa48e5",
+      "rows": 424,
+      "bytes_transferred": 91977,
+      "authentication": "HTTPS byte ranges from immutable revision; whole Parquet LFS hash not downloaded/verified"
+    }
+  ]
+}

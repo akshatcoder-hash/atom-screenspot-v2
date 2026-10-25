@@ -1,0 +1,96 @@
+{
+  "identity": "Atom four-bit",
+  "weight_filename": "model.safetensors",
+  "weight_sha256": "c4632a244c9e8354417c2f44900d28886022971843b5ab5ce37e92227aef01ca",
+  "weight_bytes": 163524711,
+  "package_bytes": 169049084,
+  "package_mib": 161.21776962280273,
+  "parameter_count_definition": "270,906,368 tensor elements in the 666-tensor upstream MLX BF16 checkpoint header; approx. 0.27B architecture, not 161M parameters. Not a new independent trainable-parameter census.",
+  "upstream_tensor_elements": 270906368,
+  "upstream_tensor_count": 666,
+  "upstream_model": "Samsung TinyClick / Florence-2 Base lineage",
+  "additional_gradient_updates_in_frozen_checkpoint": 0,
+  "mlx_source_repo": "lokendra77/TinyClick-mlx",
+  "mlx_source_revision": "c450f599d49c727abee1ee0322aa2ac271a09365",
+  "mlx_source_weight_lfs_sha256": "9894173ab06c8aa1397c5da2b9c431d1ac671a749f92367a8affb7c82b854b40",
+  "mlx_source_weight_verification": "Digest supplied by pinned HF repository metadata; only tensor header downloaded, not full upstream weights. Frozen local four-bit weights were fully hashed.",
+  "original_native_source_repo": "Krystianz/TinyClick",
+  "original_native_source_revision": "0e1356f0b7cfb416099207121f6a766818ab8a66",
+  "quantization": {
+    "method": "MLX affine",
+    "bits": 4,
+    "group_size": 64,
+    "vision_included": true,
+    "packed_U32_tensors": 198,
+    "remaining_F16_tensors": 864,
+    "note": "Eligible Linear and Embedding modules, including vision, quantized with all-modules predicate; residual tensors remain F16."
+  },
+  "files": [
+    {
+      "name": "added_tokens.json",
+      "bytes": 22410,
+      "sha256": "ba67457c577895525996e7a42d7da60a05856506ea4fd25ff9a023a64662f74b"
+    },
+    {
+      "name": "config.json",
+      "bytes": 60068,
+      "sha256": "d554934505b94234fb10090e5662f4d05c8a562f6d2ddc1df0716fab084dad81"
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 292,
+      "sha256": "1fe65790b7fa2f8a128a7bfdb75abbc92ffa0a8deb85b8ca144a9e0a8985d419"
+    },
+    {
+      "name": "merges.txt",
+      "bytes": 456318,
+      "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 163524711,
+      "sha256": "c4632a244c9e8354417c2f44900d28886022971843b5ab5ce37e92227aef01ca"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "bytes": 96965,
+      "sha256": "3a5d577309a948bacd44141544167fd60d6dc7e8ad8825e0ec728fbce56369a1"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "bytes": 603,
+      "sha256": "1396ec5a0a7adfe1c04fb777b09e8ba753be6dbb5868212ab3c3ef39d91fe031"
+    },
+    {
+      "name": "processing_florence2.py",
+      "bytes": 46372,
+      "sha256": "4bd7158536cbf1c7891fc8efd94437d79fd09f07f539c7398fab8a885d7d8bca"
+    },
+    {
+      "name": "processor_config.json",
+      "bytes": 690,
+      "sha256": "94002ab3c25c2647ff6459cd18da0dd895b2f531cf527da600e933bef670e383"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "bytes": 293616,
+      "sha256": "dd36b37dcc4631496ad86624485f091ee55387ce7b6358957be2abe268f0ec80"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 3748144,
+      "sha256": "3ad7001f773409abe6bba33eac92662611a73d72f459bda2f00d2a221dd31ce4"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 602,
+      "sha256": "b7cd124ea3fee433482954f704ec73728e0e4a80635d58f7584ac4f0ba12e016"
+    },
+    {
+      "name": "vocab.json",
+      "bytes": 798293,
+      "sha256": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e"
+    }
+  ],
+  "release_weight_distribution": "Weights and model processor code excluded from this evidence package. Obtain exact 13-file artifact separately and verify every digest before inference."
+}

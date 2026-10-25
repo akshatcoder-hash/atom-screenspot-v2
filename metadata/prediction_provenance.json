@@ -1,0 +1,16 @@
+[
+  {
+    "historical_result_basename": "v2-oneshot-repro.json",
+    "historical_result_sha256": "46bb1a9e58558bc42022348b5fb2b48f1b9196e7e07c404684eeef8975f9fe7e",
+    "sanitized_prediction_file": "predictions/atom_fourbit_oneshot.jsonl",
+    "sanitized_prediction_sha256": "b943fc227a7ef5df453aa86273c05ce5375e8105df990ce749d010ec6b2a0af9",
+    "note": "Original result metadata contained local paths; shareable JSONL preserves every point, raw trace, crop, timing, hit and call count. Target types, image IDs/dimensions and pixel coordinates added from authenticated v2 data."
+  },
+  {
+    "historical_result_basename": "v2-reground1024-repro.json",
+    "historical_result_sha256": "03834d6f2b69671ca5ccb48858c168148f19d19aff7a58e23c08d21ff4fc1e82",
+    "sanitized_prediction_file": "predictions/atom_fourbit_reground1024.jsonl",
+    "sanitized_prediction_sha256": "53cdc2d3e49a4cbf2a55c89d7a032209ffe2607d02b19489e9d743f591c842ad",
+    "note": "Original result metadata contained local paths; shareable JSONL preserves every point, raw trace, crop, timing, hit and call count. Target types, image IDs/dimensions and pixel coordinates added from authenticated v2 data."
+  }
+]

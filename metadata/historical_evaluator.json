@@ -1,0 +1,24 @@
+{
+  "reproduction_reference_commit": "2d11d58e712f0e44a58511640ee3feb4397c716f",
+  "baseline_reference_commit": "049faeb250cbf89a5acf36a96fbd918170a89085",
+  "repository_head_at_preparation": "0d681cff7689662cbae877f1bf81d44fda6a7528",
+  "files": [
+    {
+      "relative_path": "scripts/eval_screenspot.py",
+      "sha256": "48fc2129fff2e8c47039d7c8ea2ff9079ee68f3f49ac62946d718b1bfb3fa811"
+    },
+    {
+      "relative_path": "src/tinycua/grounding.py",
+      "sha256": "36d7a9e702eaf9fee9b7093ba6ada7df1ba52c03987cfdf97a5c2d830424d26c"
+    },
+    {
+      "relative_path": "src/tinycua/models/tinyclick.py",
+      "sha256": "cbb251d8baaad5628a844670a889a59a9a775457b335001a0f99023c3c5b8936"
+    },
+    {
+      "relative_path": "scripts/mlx_quantize_atom.py",
+      "sha256": "d290c83ef89d8aaa37d43f486014dfde9b1bbed2cb5dc31e3ede1e7d7aa05c9f"
+    }
+  ],
+  "source_distribution": "Original repository code is not included because no repository-wide redistribution license was found. Package scripts are newly authored reference implementations; no claim of fresh model-output parity."
+}

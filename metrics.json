@@ -1,0 +1,251 @@
+{
+  "dataset": "ScreenSpot-v2",
+  "dataset_revision": "5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c",
+  "runs": [
+    {
+      "configuration": "Atom four-bit one-shot",
+      "strategy": "oneshot",
+      "verification": "Saved historical predictions rescored in 2026-10-25 preparation against authenticated v2 data; no fresh inference",
+      "n": 1272,
+      "hits": 966,
+      "runtime_errors": 0,
+      "model_calls": 1272,
+      "model_calls_per_example": 1.0,
+      "accuracy": 0.7594339622641509,
+      "breakdowns": {
+        "overall": {
+          "hits": 966,
+          "n": 1272,
+          "accuracy": 0.7594339622641509
+        },
+        "platform/desktop": {
+          "hits": 246,
+          "n": 334,
+          "accuracy": 0.7365269461077845
+        },
+        "platform/mobile": {
+          "hits": 402,
+          "n": 501,
+          "accuracy": 0.8023952095808383
+        },
+        "platform/web": {
+          "hits": 318,
+          "n": 437,
+          "accuracy": 0.7276887871853547
+        },
+        "platform_type/desktop/icon": {
+          "hits": 73,
+          "n": 140,
+          "accuracy": 0.5214285714285715
+        },
+        "platform_type/desktop/text": {
+          "hits": 173,
+          "n": 194,
+          "accuracy": 0.8917525773195877
+        },
+        "platform_type/mobile/icon": {
+          "hits": 137,
+          "n": 211,
+          "accuracy": 0.6492890995260664
+        },
+        "platform_type/mobile/text": {
+          "hits": 265,
+          "n": 290,
+          "accuracy": 0.9137931034482759
+        },
+        "platform_type/web/icon": {
+          "hits": 118,
+          "n": 203,
+          "accuracy": 0.5812807881773399
+        },
+        "platform_type/web/text": {
+          "hits": 200,
+          "n": 234,
+          "accuracy": 0.8547008547008547
+        },
+        "source/android": {
+          "hits": 174,
+          "n": 211,
+          "accuracy": 0.8246445497630331
+        },
+        "source/forum": {
+          "hits": 56,
+          "n": 79,
+          "accuracy": 0.7088607594936709
+        },
+        "source/gitlab": {
+          "hits": 50,
+          "n": 73,
+          "accuracy": 0.684931506849315
+        },
+        "source/ios": {
+          "hits": 190,
+          "n": 238,
+          "accuracy": 0.7983193277310925
+        },
+        "source/macos": {
+          "hits": 116,
+          "n": 147,
+          "accuracy": 0.7891156462585034
+        },
+        "source/shop": {
+          "hits": 177,
+          "n": 245,
+          "accuracy": 0.7224489795918367
+        },
+        "source/tool": {
+          "hits": 86,
+          "n": 120,
+          "accuracy": 0.7166666666666667
+        },
+        "source/windows": {
+          "hits": 117,
+          "n": 159,
+          "accuracy": 0.7358490566037735
+        },
+        "target_type/icon": {
+          "hits": 328,
+          "n": 554,
+          "accuracy": 0.592057761732852
+        },
+        "target_type/text": {
+          "hits": 638,
+          "n": 718,
+          "accuracy": 0.8885793871866295
+        }
+      },
+      "historical_latency_ms": {
+        "p50": 359.1,
+        "p95": 398.4
+      },
+      "historical_wall_seconds": 461.6,
+      "historical_peak_rss_gb": 0.62
+    },
+    {
+      "configuration": "Atom four-bit + ReGround1024",
+      "strategy": "reground1024",
+      "verification": "Saved historical predictions rescored in 2026-10-25 preparation against authenticated v2 data; no fresh inference",
+      "n": 1272,
+      "hits": 984,
+      "runtime_errors": 0,
+      "model_calls": 2544,
+      "model_calls_per_example": 2.0,
+      "accuracy": 0.7735849056603774,
+      "breakdowns": {
+        "overall": {
+          "hits": 984,
+          "n": 1272,
+          "accuracy": 0.7735849056603774
+        },
+        "platform/desktop": {
+          "hits": 264,
+          "n": 334,
+          "accuracy": 0.7904191616766467
+        },
+        "platform/mobile": {
+          "hits": 392,
+          "n": 501,
+          "accuracy": 0.782435129740519
+        },
+        "platform/web": {
+          "hits": 328,
+          "n": 437,
+          "accuracy": 0.7505720823798627
+        },
+        "platform_type/desktop/icon": {
+          "hits": 86,
+          "n": 140,
+          "accuracy": 0.6142857142857143
+        },
+        "platform_type/desktop/text": {
+          "hits": 178,
+          "n": 194,
+          "accuracy": 0.9175257731958762
+        },
+        "platform_type/mobile/icon": {
+          "hits": 131,
+          "n": 211,
+          "accuracy": 0.6208530805687204
+        },
+        "platform_type/mobile/text": {
+          "hits": 261,
+          "n": 290,
+          "accuracy": 0.9
+        },
+        "platform_type/web/icon": {
+          "hits": 126,
+          "n": 203,
+          "accuracy": 0.6206896551724138
+        },
+        "platform_type/web/text": {
+          "hits": 202,
+          "n": 234,
+          "accuracy": 0.8632478632478633
+        },
+        "source/android": {
+          "hits": 162,
+          "n": 211,
+          "accuracy": 0.7677725118483413
+        },
+        "source/forum": {
+          "hits": 55,
+          "n": 79,
+          "accuracy": 0.6962025316455697
+        },
+        "source/gitlab": {
+          "hits": 53,
+          "n": 73,
+          "accuracy": 0.726027397260274
+        },
+        "source/ios": {
+          "hits": 192,
+          "n": 238,
+          "accuracy": 0.8067226890756303
+        },
+        "source/macos": {
+          "hits": 120,
+          "n": 147,
+          "accuracy": 0.8163265306122449
+        },
+        "source/shop": {
+          "hits": 189,
+          "n": 245,
+          "accuracy": 0.7714285714285715
+        },
+        "source/tool": {
+          "hits": 89,
+          "n": 120,
+          "accuracy": 0.7416666666666667
+        },
+        "source/windows": {
+          "hits": 124,
+          "n": 159,
+          "accuracy": 0.779874213836478
+        },
+        "target_type/icon": {
+          "hits": 343,
+          "n": 554,
+          "accuracy": 0.6191335740072202
+        },
+        "target_type/text": {
+          "hits": 641,
+          "n": 718,
+          "accuracy": 0.8927576601671309
+        }
+      },
+      "historical_latency_ms": {
+        "p50": 744.2,
+        "p95": 851.3
+      },
+      "historical_wall_seconds": 961.4,
+      "historical_peak_rss_gb": 0.66
+    }
+  ],
+  "paired_comparison": {
+    "gained": 79,
+    "lost": 61,
+    "net_hits": 18,
+    "accuracy_difference_percentage_points": 1.4150943396226416,
+    "note": "The observed difference does not establish a statistically significant or generalizable gain."
+  }
+}
