@@ -17,7 +17,7 @@ const targets = [
   ["click the Cancel button", (s) => `<button style="${s}">Cancel</button>`, [1000, 100, 140, 44]],
   ["click Delete invoice", (s) => `<button style="${s};background:#c0392b;color:#fff;border:0">Delete invoice</button>`, [840, 170, 300, 44]],
   ["click the search box", (s) => `<input style="${s}" placeholder="Search invoices">`, [880, 12, 360, 32]],
-  ["click Download PDF", (s) => `<a style="${s};line-height:22px" href="#">Download PDF</a>`, [24, 420, 106, 22]],
+  ["click Download PDF", (s) => `<a style="${s};line-height:22px;white-space:nowrap" href="#">Download PDF</a>`, [24, 420, 106, 22]],
 ];
 
 const at = ([x, y, w, h]) => `position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px;font-size:16px;box-sizing:border-box`;

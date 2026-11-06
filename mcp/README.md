@@ -12,7 +12,7 @@ Without the API, `ground` and `atom_health` return `isError: true` with `Atom is
 
 ### Run against the real Atom API
 
-`scripts/live-check.mjs` renders a page with five elements at known positions, screenshots it in headless Chrome, and asks the running server to ground each one. In one run on an M3 against the 4-bit checkpoint, 4 of 5 clicks landed inside the element's box (Save, Cancel, Delete invoice, search box). "Download PDF" came back about 8 px below the link. The first call took about 5 s while the model loaded, the rest about 400 ms. This is five elements on one synthetic page, a sanity check of the wiring and not a measure of accuracy; the ScreenSpot-v2 numbers are in the repository root README.
+`scripts/live-check.mjs` renders a page with five elements at known positions, screenshots it in headless Chrome, and asks the running server to ground each one. In two runs on an M3 against the 4-bit checkpoint, 5 of 5 clicks landed inside the element's box. An earlier version of the page let the "Download PDF" link wrap onto two lines, so the 22 px box the script scored against was too small and a correct click on the link counted as a miss. That is fixed with `white-space: nowrap`, and I checked once, by hand, that Chrome renders each element in the box the script uses. The first call took about 5 s while the model loaded, the rest about 400 ms. This is five elements on one synthetic page, a sanity check of the wiring and not a measure of accuracy; the ScreenSpot-v2 numbers are in the repository root README.
 
 The swoop curve is unit-tested. The view's rendering is not covered by automated tests; I checked it by eye in `mcp-use screenshot` captures (light and dark), not in Claude Desktop or ChatGPT.
 
