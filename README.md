@@ -53,3 +53,5 @@ The frozen artifact has no additional gradient updates. Its MLX source is `loken
 The new inference runner's model-output parity is **untested**; only syntax and geometry/decoding against saved traces were verified. The current dependency snapshot is not an immutable historical environment. Multiple strategies and Pro/v2 outcomes were inspected during the campaign; strict test-blind preregistration and selection solely on dev are not established. See the [selection history](METHOD_AND_SELECTION_HISTORY.md) and [verification record](VERIFICATION.md). Raw traces are truncated to 160 characters, and training-data decontamination was not independently established.
 
 Both configurations are presented separately with their call budgets. [Two-pass grounding has leaderboard precedent](https://github.com/GUI-Agent/grounding-leaderboard/commit/82f5a9e02416960890755a3f8bd67a1b412feb66); Atom's submission procedure and acceptance remain unconfirmed.
+
+A separate [MCP server](mcp/README.md) exposes Atom to agents as a `ground` tool. It is not part of the evidence above and its files are not listed in `SHA256SUMS`.
