@@ -1,6 +1,6 @@
 # atom-mcp
 
-An MCP server, built with [mcp-use](https://github.com/mcp-use/mcp-use), that exposes Atom as a `ground` tool. Give it a screenshot and a short instruction ("click the Save button") and it returns one click point. `ground` also renders an MCP Apps view: the screenshot with a marker on the predicted point.
+An MCP server, built with [mcp-use](https://github.com/mcp-use/mcp-use), that exposes Atom as a `ground` tool. Give it a screenshot and a short instruction ("click the Save button") and it returns one click point. `ground` also renders an MCP Apps view: the screenshot, with a cursor that swoops in along a short trail and lands on the predicted point, where a ring marks it. With `prefers-reduced-motion` the path is straight.
 
 Atom is a visual grounding model derived from TinyClick. It is 169 MB and runs on Apple silicon. It scores 75.9% on ScreenSpot v2 (966/1,272); that number is author-reported and not on a public leaderboard.
 
@@ -14,7 +14,7 @@ Without the API, `ground` and `atom_health` return `isError: true` with `Atom is
 
 `scripts/live-check.mjs` renders a page with five elements at known positions, screenshots it in headless Chrome, and asks the running server to ground each one. In one run on an M3 against the 4-bit checkpoint, 4 of 5 clicks landed inside the element's box (Save, Cancel, Delete invoice, search box). "Download PDF" came back about 8 px below the link. The first call took about 5 s while the model loaded, the rest about 400 ms. This is five elements on one synthetic page, a sanity check of the wiring and not a measure of accuracy; the ScreenSpot-v2 numbers are in the repository root README.
 
-The view's rendering is not covered by automated tests.
+The swoop curve is unit-tested. The view's rendering is not covered by automated tests; I checked it by eye in `mcp-use screenshot` captures (light and dark), not in Claude Desktop or ChatGPT.
 
 ## Run
 
