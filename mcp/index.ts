@@ -43,6 +43,7 @@ export const ground = server.tool(
     }),
     outputSchema: atom.click.extend({ instruction: z.string() }),
     annotations: { readOnlyHint: true, openWorldHint: false },
+    view: { name: "ground", description: "Screenshot with predicted click marker", prefersBorder: true },
   },
   async ({ instruction, image_path, image_base64 }) => {
     const screenshot = await readScreenshot(image_path, image_base64);
@@ -56,6 +57,8 @@ export const ground = server.tool(
         },
       ],
       structuredContent: { ...result, instruction },
+      // View-only: keeps the screenshot out of the model's context.
+      _meta: { imageDataUrl: `data:${screenshot.mime};base64,${screenshot.base64}` },
     };
   },
 );

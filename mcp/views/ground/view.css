@@ -1,0 +1,13 @@
+.atom { font-family: ui-sans-serif, system-ui, sans-serif; color: #111; padding: 12px; }
+[data-theme="dark"] .atom { color: #eee; }
+.atom-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; margin-bottom: 8px; font-size: 13px; }
+.atom-instr { font-weight: 600; }
+.atom-meta { opacity: .65; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.atom-stage { position: relative; line-height: 0; border-radius: 8px; overflow: hidden; border: 1px solid rgba(128,128,128,.35); }
+.atom-stage img { width: 100%; height: auto; display: block; }
+.atom-pin { position: absolute; width: 0; height: 0; pointer-events: none; }
+.atom-ring { position: absolute; left: -16px; top: -16px; width: 32px; height: 32px; border-radius: 50%; border: 3px solid #ff2d55; box-shadow: 0 0 0 2px #fff, 0 0 12px rgba(255,45,85,.8); box-sizing: border-box; }
+.atom-dot { position: absolute; left: -3px; top: -3px; width: 6px; height: 6px; border-radius: 50%; background: #ff2d55; }
+.atom-err { color: #d92d20; font-size: 13px; padding: 8px 0; }
+.atom-skel { height: 120px; border-radius: 8px; background: rgba(128,128,128,.2); animation: p 1.2s infinite; }
+@keyframes p { 50% { opacity: .5; } }
