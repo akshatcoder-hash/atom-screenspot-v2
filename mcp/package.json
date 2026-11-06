@@ -1,0 +1,44 @@
+{
+  "name": "atom-mcp",
+  "type": "module",
+  "engines": {
+    "node": ">=22.22.2"
+  },
+  "version": "0.1.0",
+  "description": "MCP server that exposes Atom, a local GUI-grounding model, as a `ground` tool with an MCP Apps view",
+  "author": "Akshat Sharma",
+  "license": "MIT",
+  "homepage": "https://github.com/akshatcoder-hash/atom-screenspot-v2/tree/main/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshatcoder-hash/atom-screenspot-v2.git",
+    "directory": "mcp"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "mcp-app",
+    "mcp-use",
+    "gui-grounding",
+    "atom"
+  ],
+  "scripts": {
+    "build": "mcp-use build",
+    "dev": "mcp-use dev",
+    "start": "mcp-use start",
+    "typecheck": "mcp-use typecheck",
+    "test": "mcp-use build && node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "mcp-use": "2.12.2",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "zod": "^4.6.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^7.0.2"
+  }
+}
